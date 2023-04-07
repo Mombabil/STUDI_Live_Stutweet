@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	{{ form_start(post_form, {'attr': {'novalidate': 'novalidate'}}) }}
+	{{ form_row(post_form.title) }}
+	{{ form_row(post_form.content) }}
+	{{ form_row(post_form.image) }}
+	<input type="submit" class="btn btn-primary" value="Publier"/>
+	{{ form_end(post_form) }}
+{% endblock %}
+
